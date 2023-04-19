@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    --alice-blue: #e2e8f0ff;
+    --green-blue-crayola: #1992d4ff;
+    --white: #ffffffff;
+    --alice-blue-2: rgb(197, 201, 207);
+    --maximum-yellow-red: #f0b429ff;
+    --green-blue-crayola-2: rgb(24, 129, 185);
+
+    /* background-color: var(--alice-blue); */
+}

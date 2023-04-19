@@ -1,0 +1,252 @@
+body{   
+    display: grid;
+    grid-auto-columns: minmax(20vw, 1fr);
+    grid-template-areas: 
+    "sidebar navbar navbar navbar"
+    "sidebar card card card"
+    "sidebar card card card"
+    "sidebar card card card";
+    background-color: var(--alice-blue);
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: var(--green-blue-crayola);
+    height: 100%;
+    max-width: 100%;
+    color: var(--white);
+}
+
+.navbar{
+    grid-area: navbar;
+    background-color: var(--white);
+    min-width: fit-content;
+    height: fit-content;
+}
+
+.maincard{
+    grid-area: card;
+    height: 80vh;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: 
+    "category1 blank category2"
+    "card1 card2 sidecard"
+    "card3 card4 sidecard"
+    "card5 card6 sidecard";
+    grid-auto-columns: 1fr;
+    grid-template-rows: max-content 1fr 1fr 1fr;
+    column-gap: 2%;
+    row-gap: 2%;
+    padding:0 2% 50px 2% ;
+}
+
+.card{
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    border-left: var(--maximum-yellow-red) solid 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.sidecard{
+    grid-area: sidecard;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(255, 255, 255); */
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.card1{
+    grid-area: card1;
+}
+.card2{
+    grid-area: card2;
+}
+.card3{
+    grid-area: card3;
+}
+.card4{
+    grid-area: card4;
+}
+.card5{
+    grid-area: card5;
+}
+.card6{
+    grid-area: card6;
+}
+
+.upper_sidecard{
+    min-height: 40%;
+    background-color: crimson;
+    border-radius: 10px;
+}
+
+.lower_sidecard{
+    height:40%;
+    background-color: darkslategrey;
+    border-radius: 10px;
+}
+
+.projects{
+    grid-area: category1;
+}
+
+.announcements{
+    grid-area: category2;
+}
+
+.trending{
+    grid-area: category3;
+}
+
+.category{
+    padding: 1rem 0 ;
+    justify-self: left;
+}
+
+svg{
+    height: 15px;
+    width: 15px;
+}
+
+.searchbox{
+    background-color: var(--alice-blue);
+    border: none;
+    border-radius: 10px;
+    min-width: 35vw;
+    max-width: 500px;
+}
+
+.searchbox input{
+    width: minmax(40vw, 500px);
+}
+
+.profile_group{
+    min-width: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    gap: 20px;
+}
+
+.navbar_top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.search_group{
+    margin-left: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.small_dp{
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+}
+
+.navbar_bottom{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome{
+    display: flex;
+    align-items: center;
+    padding-left: 10px ;
+}
+.profile_dp{
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+}
+
+.buttons{
+    display: flex;
+    gap: 20px;
+    padding-right: 10px;
+}
+
+.navbar_buttons{
+    min-width: 80px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--green-blue-crayola);
+    color: var(--white);
+}
+
+.navbar_buttons:active{
+    background-color: var(--green-blue-crayola-2);
+
+}
+
+.sidebar_title{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.dashboard_options1{
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.dashboard_options2{
+    padding-top: 20px;
+    padding-left: 20px;
+
+}
+
+.sidebar p{
+    display: flex;
+    gap: 10px;
+    padding: 5px 0;
+    align-items: center;
+    height: 30px;
+}
+
+.subtitle{
+    padding: 0 20px ;
+}
+
+.title{
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.unselected:hover{
+    color:red
+}
+
+.card_options_group{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+    min-height: 70px;
+    padding: 25px;
+}
+
+svg{
+    transform: scale(1.5);
+}
